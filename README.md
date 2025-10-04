@@ -10,7 +10,7 @@ A professional Gradio-based dashboard for comprehensive MD thesis analysis using
   - **Dr. Jennifer Martinez** (Industry Professional) - Practical application focus
 - **Chief Guide Strategic Analysis**: Meta-analysis of expert feedback with actionable insights
 - **Professional Dashboard Interface**: Modern, tabular presentation with clean formatting
-- **AI-Powered Analysis**: Uses OpenAI GPT models for comprehensive evaluation
+- **AI-Powered Analysis**: Uses advanced AI for comprehensive evaluation
 - **Strategic Recommendations**: Immediate priorities and medium-term development plans
 - **Defense Preparation Strategy**: Readiness assessment and preparation areas
 
@@ -53,10 +53,10 @@ The dashboard provides:
    ```
 
 3. **Set up OpenAI API key:**
+   Create a `.env` file in the project root with your API key:
    ```bash
-   export OPENAI_API_KEY="your-api-key-here"
+   echo 'OPENAI_API_KEY=your-api-key-here' > .env
    ```
-   Or the API key is already configured in the application.
 
 ## Usage
 
@@ -66,8 +66,7 @@ The dashboard provides:
    ```
 
 2. **Access the dashboard:**
-   - Open your browser and go to `http://localhost:7862`
-   - Select your preferred AI model (GPT-4o recommended)
+   - Open your browser and go to `http://localhost:7860`
    - Click "Generate Strategic Analysis" to get comprehensive evaluation
    - View the professional dashboard with expert analysis and strategic insights
 
@@ -93,12 +92,14 @@ Ethesis/
 │   └── app.py          # Main Gradio dashboard application
 ├── requirements.txt    # Python dependencies
 ├── setup.sh           # Setup script
+├── .env               # Environment variables (API key)
 └── README.md          # This file
 ```
 
 ## Technical Details
 
 - **Framework**: Gradio 4.0+ with custom CSS styling
-- **AI Models**: OpenAI GPT-4o, GPT-4o-mini, GPT-4-turbo, GPT-4, GPT-3.5-turbo
+- **AI Integration**: Advanced AI models for comprehensive analysis
 - **Interface**: Professional dashboard with gradient styling and card-based layout
 - **Output Format**: Structured analysis with tables and clear section separation
+- **Configuration**: Environment-based API key management via `.env` file
